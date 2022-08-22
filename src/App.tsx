@@ -4,10 +4,12 @@ function App() {
   return (
     <>
       <div style={{ padding: "1rem 2rem" }}>
-        <Button style={{ marginBottom: "5px" }} size="sm" color="primary">
+        <Button size="sm" color="primary">
           sm primary
         </Button>
-        <Button style={{ marginBottom: "5px" }}>md primary</Button>
+        <br />
+        <Button>md primary</Button>
+        <br />
         <Button color="secondary" size="lg">
           lg secondary
         </Button>
