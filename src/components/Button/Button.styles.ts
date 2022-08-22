@@ -5,6 +5,7 @@ import styled from "@emotion/styled";
 import { ButtonProps } from "./Button.types";
 
 export const Container = styled.button<Omit<ButtonProps, "children">>`
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
   border: none;
   ${flexCenter}
