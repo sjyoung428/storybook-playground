@@ -11,7 +11,7 @@ import { ModalProps } from "./Modal.types";
  *
  */
 
-const Modal = ({ open = false, setOpen, children }: ModalProps) => {
+const Modal = ({ open = false, setOpen, children, ...rest }: ModalProps) => {
   const modalRoot = document.querySelector("#modal") as HTMLElement;
 
   useEffect(() => {
@@ -30,7 +30,7 @@ const Modal = ({ open = false, setOpen, children }: ModalProps) => {
       {open ? (
         <S.Container>
           <S.Background onClick={onCancel} />
-          <S.Modal>{children}</S.Modal>
+          <S.Modal {...rest}>{children}</S.Modal>
         </S.Container>
       ) : null}
     </>,
