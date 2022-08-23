@@ -6,7 +6,6 @@ export const Container = styled.div``;
 
 export const Background = styled.div`
   ${flexCenter}
-  max-height: 100vh;
   height: 100%;
   width: 100%;
   left: 0;
