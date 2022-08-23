@@ -20,10 +20,10 @@ const Modal = ({ open = false, setOpen, children }: ModalProps) => {
   return ReactDOM.createPortal(
     <>
       {open ? (
-        <>
+        <S.Container>
           <S.Background onClick={onCancel} />
           <S.Modal>{children}</S.Modal>
-        </>
+        </S.Container>
       ) : null}
     </>,
     modalRoot

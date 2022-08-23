@@ -2,6 +2,8 @@ import colors from "@/styles/colors";
 import { flexCenter } from "@/styles/shared/flex";
 import styled from "@emotion/styled";
 
+export const Container = styled.div``;
+
 export const Background = styled.div`
   ${flexCenter}
   max-height: 100vh;
