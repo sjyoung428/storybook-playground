@@ -11,6 +11,13 @@ interface ModalProps {
 const Modal = ({ open = false, setOpen, children }: ModalProps) => {
   const modalRoot = document.querySelector("#modal") as HTMLElement;
 
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, []);
+
   const onCancel = () => {
     setOpen(false);
   };
