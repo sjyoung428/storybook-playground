@@ -1,12 +1,7 @@
 import * as S from "./Modal.styles";
 import ReactDOM from "react-dom";
-import React, { ReactNode, useEffect } from "react";
-
-interface ModalProps {
-  open?: boolean;
-  setOpen: (boolean: boolean) => void;
-  children: ReactNode;
-}
+import { useEffect } from "react";
+import { ModalProps } from "./Modal.types";
 
 const Modal = ({ open = false, setOpen, children }: ModalProps) => {
   const modalRoot = document.querySelector("#modal") as HTMLElement;
