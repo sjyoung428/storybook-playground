@@ -26,6 +26,13 @@ const styles = css`
     padding: 0;
     cursor: pointer;
   }
+  body {
+    -ms-overflow-style: none;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 export const GlobalStyle = () => {
