@@ -5,9 +5,7 @@ const useScrollProgress = () => {
 
   const handleProgress = () => {
     const totalScroll = document.documentElement.scrollTop;
-    const windowHeight =
-      document.documentElement.scrollHeight -
-      document.documentElement.clientHeight;
+    const windowHeight = window.innerHeight;
     const scroll = (totalScroll / windowHeight) * 100;
     setScroll(scroll);
   };
