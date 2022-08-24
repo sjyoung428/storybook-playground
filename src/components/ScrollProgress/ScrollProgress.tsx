@@ -1,4 +1,5 @@
-import useScrollProgress from "@/hooks/useScrollProgress";
+import useScrollProgress from "@/libs/hooks/useScrollProgress";
+import moveScrollProgress from "@/libs/utils/moveScrollProgress";
 import { useRef } from "react";
 import * as S from "./ScrollProgress.styles";
 
@@ -7,13 +8,10 @@ const ScrollProgress = () => {
   const progressRef = useRef<HTMLDivElement>(null);
 
   const onClick = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    const { clientX } = event;
     if (progressRef && progressRef.current) {
-      const { clientX } = event;
       const { scrollWidth } = progressRef.current;
-      window.scrollTo({
-        top: window.innerHeight * (clientX / scrollWidth),
-        behavior: "smooth",
-      });
+      moveScrollProgress(clientX, scrollWidth);
     }
   };
 
