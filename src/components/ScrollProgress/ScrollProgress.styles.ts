@@ -10,6 +10,6 @@ export const Container = styled.div`
 
 export const ProgressBar = styled.div<{ progress: number }>`
   background: linear-gradient(to left, rgb(255, 166, 166), rgb(126, 197, 255));
-  height: 8px;
+  height: 0.5rem;
   width: ${({ progress }) => progress + "%"};
 `;
