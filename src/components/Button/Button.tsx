@@ -1,6 +1,13 @@
 import * as S from "./Button.styles";
 import { ButtonProps } from "./Button.types";
 
+/**
+ *
+ * @param size - 버튼 사이즈 조정 "sm" | "md" | "lg"
+ * @param color - 버튼 색상 "primary" | "secondary"
+ *
+ */
+
 const Button = ({
   size = "md",
   color = "primary",
