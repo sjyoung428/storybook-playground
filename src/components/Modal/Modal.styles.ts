@@ -1,5 +1,5 @@
 import colors from "@/styles/colors";
-import { fixedCenter } from "@/styles/shared/fixed";
+import { fixedHorizontalCenter } from "@/styles/shared/fixed";
 import { flexCenter } from "@/styles/shared/flex";
 import styled from "@emotion/styled";
 
@@ -22,6 +22,6 @@ export const Modal = styled.div`
   color: ${colors.white};
   border-radius: 0.2rem;
   padding: 2rem 2rem;
-  ${fixedCenter};
+  ${fixedHorizontalCenter};
   top: 20%;
 `;

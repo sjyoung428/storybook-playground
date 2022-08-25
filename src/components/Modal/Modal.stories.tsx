@@ -17,7 +17,7 @@ const Template: ComponentStory<typeof Modal> = () => {
   return (
     <>
       <Modal open={openModal} setOpen={setOpenModal} children="모달창" />
-      <Button onClick={onOpenModal}>모달창 열기</Button>
+      <Button onClick={onOpenModal}>모달창</Button>
     </>
   );
 };

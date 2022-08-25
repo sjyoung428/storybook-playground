@@ -9,17 +9,7 @@ function App() {
     <>
       <div style={{ padding: "1rem 2rem", height: "200vh" }}>
         <ScrollProgress />
-        <Button size="sm" color="primary">
-          sm primary
-        </Button>
-        <br />
-        <br />
-        <Button>md primary</Button>
-        <br />
-        <br />
-        <Button color="secondary" size="lg">
-          lg secondary
-        </Button>
+        <Button color="secondary" children="버튼" />
         <br />
         <br />
         {/** 모달 */}

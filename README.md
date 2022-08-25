@@ -2,11 +2,11 @@
 
 # 버튼
 
-![버튼스토리mp4](https://user-images.githubusercontent.com/77968955/186587346-24d46656-ac33-46a6-80f9-0ffb0a35a3c2.gif)
+![버튼스토리mp4](https://user-images.githubusercontent.com/77968955/186611869-09741f51-32cc-4a0b-a267-161671fa7f3f.gif)
 
 # 모달
 
-![모달스토리mp4](https://user-images.githubusercontent.com/77968955/186587350-215cff74-03bb-43df-bd8c-604ab30db11e.gif)
+![모달스토리mp4](https://user-images.githubusercontent.com/77968955/186611877-296fb642-47bd-4519-aa0c-50821c366b73.gif)
 
 # 스크롤
 
