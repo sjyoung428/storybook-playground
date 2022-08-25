@@ -8,6 +8,7 @@ export const Container = styled.div`
   top: 0;
   left: 0;
   background: #ccc;
+  z-index: 999;
 `;
 
 export const ProgressBar = styled.div<ScrollProgressState>`
