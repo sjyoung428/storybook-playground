@@ -6,6 +6,17 @@ const colors = {
   success: "#59CE8F",
   warning: "#FEF9A7",
   error: "#FA1E0E",
+  scrollBackground: "#ccc",
+  button: {
+    arrow: {
+      primary: "#04fe4d",
+      secondary: "#3d3d3f",
+    },
+    background: {
+      primary: "#3d3d3f",
+      secondary: "#e9ebef",
+    },
+  },
 } as const;
 
 export default colors;

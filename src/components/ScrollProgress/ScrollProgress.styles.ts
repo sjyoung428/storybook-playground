@@ -1,3 +1,4 @@
+import colors from "@/styles/colors";
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 import { ScrollProgressState } from "./ScrollProgress.types";
@@ -7,7 +8,7 @@ export const Container = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  background: #ccc;
+  background: ${colors.scrollBackground};
   z-index: 999;
 `;
 

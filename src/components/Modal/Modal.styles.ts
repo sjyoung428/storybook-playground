@@ -12,7 +12,8 @@ export const Background = styled.div`
   left: 0;
   top: 0;
   position: fixed;
-  background-color: rgba(1, 1, 1, 0.2);
+  background-color: ${colors.black};
+  opacity: 0.3;
 `;
 
 export const Modal = styled.div`

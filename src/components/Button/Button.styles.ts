@@ -32,11 +32,11 @@ export const Container = styled.button<Omit<ButtonProps, "value">>`
   ${({ color }) =>
     color === "primary"
       ? css`
-          background: #3d3d3f;
+          background: ${colors.button.background.primary};
           color: rgba(255, 255, 255, 0.5);
         `
       : css`
-          background: #e9ebef;
+          background: ${colors.button.background.secondary};
           color: rgba(0, 0, 0, 0.4);
         `}
   letter-spacing: 0.5px;
@@ -96,10 +96,10 @@ export const ButtonArrow = styled.span<Pick<ButtonProps, "color">>`
   ${({ color }) =>
     color === "primary"
       ? css`
-          background: #04fe4d;
+          background: ${colors.button.arrow.primary};
         `
       : css`
-          background: #3d3d3f;
+          background: ${colors.button.arrow.secondary};
         `}
   transition: 0.5s ease-in-out;
   svg {
