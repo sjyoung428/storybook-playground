@@ -12,7 +12,10 @@ import { ScrollProgressState } from "./ScrollProgress.types";
  *
  */
 
-const ScrollProgress = ({ colors }: Pick<ScrollProgressState, "colors">) => {
+const ScrollProgress = ({
+  colors,
+  ...rest
+}: Omit<ScrollProgressState, "progress">) => {
   const scroll = useScrollProgress();
   const progressRef = useRef<HTMLDivElement>(null);
 
@@ -25,7 +28,7 @@ const ScrollProgress = ({ colors }: Pick<ScrollProgressState, "colors">) => {
   };
 
   return (
-    <S.Container onClick={onClick} ref={progressRef}>
+    <S.Container {...rest} onClick={onClick} ref={progressRef}>
       <S.ProgressBar colors={colors} progress={scroll} />
     </S.Container>
   );
