@@ -1,5 +1,5 @@
 import useScrollProgress from "@/libs/hooks/useScrollProgress";
-import moveScrollProgress from "@/libs/utils/moveScrollProgress";
+import moveViewPoint from "@/libs/utils/moveViewPoint";
 import { useRef } from "react";
 import * as S from "./ScrollProgress.styles";
 import { ScrollProgressState } from "./ScrollProgress.types";
@@ -23,7 +23,7 @@ const ScrollProgress = ({
     const { clientX } = event;
     if (progressRef && progressRef.current) {
       const { scrollWidth } = progressRef.current;
-      moveScrollProgress(clientX, scrollWidth);
+      moveViewPoint(clientX, scrollWidth);
     }
   };
 
