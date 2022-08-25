@@ -1,7 +1,7 @@
-import { HtmlHTMLAttributes } from "react";
+import { DetailedHTMLProps, HTMLAttributes } from "react";
 
 export interface ScrollProgressState
-  extends HtmlHTMLAttributes<HTMLDivElement> {
+  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
   colors: string | string[];
   progress: number;
 }
