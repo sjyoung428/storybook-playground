@@ -19,8 +19,6 @@ export const ProgressBar = styled.div<ScrollProgressState>`
       : css`
           background: ${colors};
         `}
-
-  /* background: linear-gradient(to left, rgb(255, 166, 166), rgb(126, 197, 255)); */
   height: 0.5rem;
   width: ${({ progress }) => progress + "%"};
 `;
