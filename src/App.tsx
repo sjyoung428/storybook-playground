@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div style={{ padding: "1rem 2rem", height: "200vh" }}>
-        <ScrollProgress />
+        <ScrollProgress colors={["rgb(255, 166, 166)", "rgb(126, 197, 255)"]} />
         <Button color="secondary" children="버튼" />
         <br />
         <br />

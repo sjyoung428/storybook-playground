@@ -2,15 +2,15 @@
 
 # 버튼
 
-![버튼스토리mp4](https://user-images.githubusercontent.com/77968955/186611869-09741f51-32cc-4a0b-a267-161671fa7f3f.gif)
+![button](https://user-images.githubusercontent.com/77968955/186611869-09741f51-32cc-4a0b-a267-161671fa7f3f.gif)
 
 # 모달
 
-![모달스토리mp4](https://user-images.githubusercontent.com/77968955/186611877-296fb642-47bd-4519-aa0c-50821c366b73.gif)
+![modal](https://user-images.githubusercontent.com/77968955/186611877-296fb642-47bd-4519-aa0c-50821c366b73.gif)
 
 # 스크롤
 
-![스크롤스토리mp4](https://user-images.githubusercontent.com/77968955/186587356-5244bbdc-f01e-4fee-bcea-cc0422c4cd87.gif)
+![scrollprogress](https://user-images.githubusercontent.com/77968955/186626150-b7170008-50a1-4472-8242-5d0136601ea9.gif)
 
 ## boilerplate
 

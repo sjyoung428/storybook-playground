@@ -1,4 +1,6 @@
+import { css } from "@emotion/react";
 import styled from "@emotion/styled";
+import { ScrollProgressState } from "./ScrollProgress.types";
 
 export const Container = styled.div`
   width: 100%;
@@ -8,8 +10,17 @@ export const Container = styled.div`
   background: #ccc;
 `;
 
-export const ProgressBar = styled.div<{ progress: number }>`
-  background: linear-gradient(to left, rgb(255, 166, 166), rgb(126, 197, 255));
+export const ProgressBar = styled.div<ScrollProgressState>`
+  ${({ colors }) =>
+    Array.isArray(colors)
+      ? css`
+          background: linear-gradient(to left, ${colors.join(",")});
+        `
+      : css`
+          background: ${colors};
+        `}
+
+  /* background: linear-gradient(to left, rgb(255, 166, 166), rgb(126, 197, 255)); */
   height: 0.5rem;
   width: ${({ progress }) => progress + "%"};
 `;
