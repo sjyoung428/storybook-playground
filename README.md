@@ -1,17 +1,16 @@
 # Storybook Typescript React Vite
 
-```bash
-npm create vite
-```
+# 버튼
 
-```bash
-npx sb init --builder @storybook/builder-vite
-npm run storybook
-```
+![버튼스토리mp4](https://user-images.githubusercontent.com/77968955/186587346-24d46656-ac33-46a6-80f9-0ffb0a35a3c2.gif)
 
-```bash
-npm i @emotion/styled @emotion/react emotion-reset
-```
+# 모달
+
+![모달스토리mp4](https://user-images.githubusercontent.com/77968955/186587350-215cff74-03bb-43df-bd8c-604ab30db11e.gif)
+
+# 스크롤
+
+![스크롤스토리mp4](https://user-images.githubusercontent.com/77968955/186587356-5244bbdc-f01e-4fee-bcea-cc0422c4cd87.gif)
 
 ## boilerplate
 
