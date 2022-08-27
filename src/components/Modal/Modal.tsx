@@ -25,11 +25,13 @@ const Modal = ({ open = false, setOpen, children, ...rest }: ModalProps) => {
   };
 
   useEffect(() => {
+    let visibleId: NodeJS.Timeout;
     if (open) {
       setVisible(true);
     } else {
-      setTimeout(() => setVisible(false), 300);
+      visibleId = setTimeout(() => setVisible(false), 300);
     }
+    return () => clearTimeout(visibleId);
   }, [open]);
 
   return ReactDOM.createPortal(
