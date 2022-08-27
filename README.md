@@ -6,7 +6,7 @@
 
 # 모달
 
-![modal](https://user-images.githubusercontent.com/77968955/187027909-3367e6d5-0bd5-49a0-8ade-5c71ac36a220.gif)
+![modal](https://user-images.githubusercontent.com/77968955/187029435-392fa7ea-279a-4a49-a104-f1769c507639.gif)
 
 # 스크롤
 

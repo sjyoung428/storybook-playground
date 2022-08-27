@@ -67,7 +67,6 @@ export const Container = styled.button<Omit<ButtonProps, "value">>`
     position: absolute;
     width: 5rem;
     height: 100%;
-    z-index: 1;
     background: rgba(255, 255, 255, 0.25);
     transform: translateX(-9.5rem) skewX(30deg);
     transition: 0.75s ease-in-out;

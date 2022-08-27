@@ -15,8 +15,10 @@ export const Background = styled.div`
   left: 0;
   top: 0;
   position: fixed;
-  background-color: ${colors.black};
-  opacity: 0.3;
+  /* background-color: ${colors.black};
+  opacity: 0.15; */
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
 `;
 
 export const Modal = styled.div`
