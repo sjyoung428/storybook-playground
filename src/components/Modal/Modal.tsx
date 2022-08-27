@@ -4,10 +4,11 @@ import { ModalProps } from "./Modal.types";
 import { useEffect, useState } from "react";
 
 /**
- *
- * @param {boolean} open - true일 때 모달이 열리고 false이면 모달이 닫힌다.
- * @param {Pick<ModalProps,"setOpen">} setOpen - open의 상태를 변경하는 setState 배경을 클릭하면 모달창이 꺼진다.
- * @param {ReactNode} children - 모달창 안에 나타나는 요소
+ * @typedef {import("./Modal.types").ModalProps} ModalProps
+ * @param {ModalProps} props
+ * @param  [props.open] - true일 때 모달이 열리고 false이면 모달이 닫힌다.
+ * @param  [props.setOpen] - open의 상태를 변경하는 setState 배경을 클릭하면 모달창이 꺼진다.
+ * @param  [props.children] - 모달창 안에 나타나는 요소
  *
  */
 

@@ -4,8 +4,10 @@ import { ButtonProps } from "./Button.types";
 
 /**
  *
- * @param size - 버튼 사이즈 조정 "sm" | "md" | "lg"
- * @param color - 버튼 색상 "primary" | "secondary"
+ * @typedef {import("./Button.types").ButtonProps} ButtonProps
+ * @param {ButtonProps} props
+ * @param [props.size] - 버튼 사이즈 조정 "sm" | "md" | "lg"
+ * @param [props.color] - 버튼 색상 "primary" | "secondary"
  *
  */
 
