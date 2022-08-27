@@ -1,9 +1,12 @@
+import { modalAnimation } from "@/styles/animations/modalAnimaion";
 import colors from "@/styles/colors";
 import { fixedHorizontalCenter } from "@/styles/shared/fixed";
 import { flexCenter } from "@/styles/shared/flex";
 import styled from "@emotion/styled";
 
-export const Container = styled.div``;
+export const Container = styled.div<{ open: boolean }>`
+  ${({ open }) => modalAnimation(open)}
+`;
 
 export const Background = styled.div`
   ${flexCenter}

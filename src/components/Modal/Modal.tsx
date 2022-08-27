@@ -1,6 +1,7 @@
 import * as S from "./Modal.styles";
 import ReactDOM from "react-dom";
 import { ModalProps } from "./Modal.types";
+import { useEffect, useState } from "react";
 
 /**
  *
@@ -12,6 +13,7 @@ import { ModalProps } from "./Modal.types";
 
 const Modal = ({ open = false, setOpen, children, ...rest }: ModalProps) => {
   const modalRoot = document.querySelector("#modal") as HTMLElement;
+  const [visible, setVisible] = useState(false);
 
   if (open) {
     document.body.style.overflow = "hidden";
@@ -22,10 +24,18 @@ const Modal = ({ open = false, setOpen, children, ...rest }: ModalProps) => {
     document.body.style.overflow = "unset";
   };
 
+  useEffect(() => {
+    if (open) {
+      setVisible(true);
+    } else {
+      setTimeout(() => setVisible(false), 300);
+    }
+  }, [open]);
+
   return ReactDOM.createPortal(
     <>
-      {open ? (
-        <S.Container>
+      {visible ? (
+        <S.Container open={open}>
           <S.Background onClick={onCancel} />
           <S.Modal {...rest}>{children}</S.Modal>
         </S.Container>
