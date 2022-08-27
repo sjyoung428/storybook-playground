@@ -15,10 +15,10 @@ const Template: ComponentStory<typeof Modal> = () => {
   };
 
   return (
-    <>
+    <div style={{ height: "200vh" }}>
       <Modal open={openModal} setOpen={setOpenModal} children="모달창" />
       <Button onClick={onOpenModal}>모달창</Button>
-    </>
+    </div>
   );
 };
 

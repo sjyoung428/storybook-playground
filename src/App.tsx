@@ -13,7 +13,7 @@ function App() {
         <br />
         <br />
         {/** 모달 */}
-        {open && <Modal open={open} setOpen={setOpen} children="hello" />}
+        <Modal open={open} setOpen={setOpen} children="hello" />
         <Button onClick={() => setOpen(true)}>open modal</Button>
       </div>
     </>
