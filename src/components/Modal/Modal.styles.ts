@@ -22,8 +22,8 @@ export const Background = styled.div`
 export const Modal = styled.div`
   width: 30%;
   height: 30%;
-  background: ${colors.black};
-  color: ${colors.white};
+  background: ${colors.white};
+  color: ${colors.black};
   border-radius: 0.2rem;
   padding: 2rem 2rem;
   ${fixedHorizontalCenter};
