@@ -19,7 +19,9 @@ const Template: ComponentStory<typeof Modal> = () => {
     <div style={{ height: "200vh" }}>
       <ScrollProgress colors="blue" />
       <Modal open={openModal} setOpen={setOpenModal} children="모달창" />
-      <Button onClick={onOpenModal}>모달창</Button>
+      <Button style={{ marginTop: "20%" }} onClick={onOpenModal}>
+        모달창
+      </Button>
     </div>
   );
 };
