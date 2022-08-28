@@ -1,8 +1,8 @@
 import Modal from "./Modal";
-import Button from "@/components/Button/Button";
+import Button from "@/components/@storybook/Button/Button";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { useState } from "react";
-import ScrollProgress from "../ScrollProgress/ScrollProgress";
+import ScrollProgress from "@/components/@storybook/ScrollProgress/ScrollProgress";
 
 export default {
   title: "Modal",

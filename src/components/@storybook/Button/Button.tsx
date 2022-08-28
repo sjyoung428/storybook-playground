@@ -1,4 +1,4 @@
-import SVGArrowRight from "../Svg/SVGArrowRight";
+import SVGArrowRight from "../../Svg/SVGArrowRight";
 import * as S from "./Button.styles";
 import { ButtonProps } from "./Button.types";
 

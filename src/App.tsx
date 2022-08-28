@@ -1,7 +1,7 @@
-import Button from "@/components/Button/Button";
-import Modal from "@/components/Modal/Modal";
+import Button from "@/components/@storybook/Button/Button";
+import Modal from "@/components/@storybook/Modal/Modal";
 import { useState } from "react";
-import ScrollProgress from "./components/ScrollProgress/ScrollProgress";
+import ScrollProgress from "./components/@storybook/ScrollProgress/ScrollProgress";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -13,7 +13,9 @@ function App() {
         <br />
         <br />
         {/** 모달 */}
-        <Modal open={open} setOpen={setOpen} children="hello" />
+        <Modal open={open} setOpen={setOpen}>
+          모달
+        </Modal>
         <Button onClick={() => setOpen(true)}>open modal</Button>
       </div>
     </>
