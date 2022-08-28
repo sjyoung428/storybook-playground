@@ -9,6 +9,7 @@ import styled from "@emotion/styled";
 import { ButtonProps } from "./Button.types";
 
 export const Container = styled.button<Omit<ButtonProps, "value">>`
+  cursor: pointer;
   border: none;
   position: relative;
   overflow: hidden;
