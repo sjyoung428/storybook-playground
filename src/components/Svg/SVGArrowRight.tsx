@@ -1,5 +1,11 @@
 import { SVGProps } from "react";
 
+/**
+ *
+ * @param props
+ * @see https://www.svgviewer.dev/
+ */
+
 const SVGArrowRight = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
