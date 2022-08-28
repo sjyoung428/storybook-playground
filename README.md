@@ -15,3 +15,7 @@
 ## boilerplate
 
 [링크](https://github.com/sjyoung428/storybook-playground/tree/689241d0a29a73500902ba75f6c002c5d832abf9)
+
+# Storybook 배포
+
+[참고 링크](https://stackoverflow.com/questions/72826931/how-to-deploy-storybook-to-vercel)

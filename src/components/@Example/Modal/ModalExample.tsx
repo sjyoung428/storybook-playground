@@ -28,7 +28,9 @@ const ModalExample = () => {
           culpa qui officia deserunt mollit anim id est laborum.
         </S.Content>
       </Modal>
-      <Button onClick={() => setOpenModal(true)}>모달 열기</Button>
+      <Button style={{ marginTop: "10%" }} onClick={() => setOpenModal(true)}>
+        모달 열기
+      </Button>
     </>
   );
 };

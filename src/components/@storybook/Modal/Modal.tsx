@@ -16,21 +16,18 @@ const Modal = ({ open = false, setOpen, children, ...rest }: ModalProps) => {
   const modalRoot = document.querySelector("#modal") as HTMLElement;
   const [visible, setVisible] = useState(false);
 
-  if (open) {
-    document.body.style.overflow = "hidden";
-  }
-
   const onCancel = () => {
     setOpen(false);
-    document.body.style.overflow = "unset";
   };
 
   useEffect(() => {
     let visibleId: NodeJS.Timeout;
     if (open) {
       setVisible(true);
+      document.body.style.overflow = "hidden";
     } else {
       visibleId = setTimeout(() => setVisible(false), 300);
+      document.body.style.overflow = "unset";
     }
     return () => clearTimeout(visibleId);
   }, [open]);
