@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { useState } from "react";
 import Button from "../Button/Button";
+import ScrollProgress from "../ScrollProgress/ScrollProgress";
 
 export default {
   title: "Modal",
@@ -14,6 +15,7 @@ const Template: ComponentStory<typeof Modal> = () => {
 
   return (
     <div style={{ height: "200vh" }}>
+      <ScrollProgress colors={["rgb(255, 166, 166)", "rgb(126, 197, 255)"]} />
       <Modal open={openModal} setOpen={setOpenModal}>
         <Container>
           <Header>
