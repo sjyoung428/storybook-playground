@@ -21,9 +21,8 @@ export const Background = styled.div`
   backdrop-filter: blur(2px);
 `;
 
-export const Modal = styled.div`
-  width: 30%;
-  height: 30%;
+export const ModalElement = styled.div`
+  min-width: 30%;
   background: ${colors.white};
   color: ${colors.black};
   border-radius: 0.2rem;

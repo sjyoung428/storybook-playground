@@ -1,10 +1,8 @@
 import Button from "@/components/@storybook/Button/Button";
-import Modal from "@/components/@storybook/Modal/Modal";
-import { useState } from "react";
+import ModalExample from "./components/@Example/Modal/ModalExample";
 import ScrollProgress from "./components/@storybook/ScrollProgress/ScrollProgress";
 
 function App() {
-  const [open, setOpen] = useState(false);
   return (
     <>
       <div style={{ padding: "1rem 2rem", height: "200vh" }}>
@@ -13,10 +11,7 @@ function App() {
         <br />
         <br />
         {/** 모달 */}
-        <Modal open={open} setOpen={setOpen}>
-          모달
-        </Modal>
-        <Button onClick={() => setOpen(true)}>open modal</Button>
+        <ModalExample />
       </div>
     </>
   );

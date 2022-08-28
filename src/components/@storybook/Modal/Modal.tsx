@@ -40,7 +40,7 @@ const Modal = ({ open = false, setOpen, children, ...rest }: ModalProps) => {
       {visible ? (
         <S.Container open={open}>
           <S.Background onClick={onCancel} />
-          <S.Modal {...rest}>{children}</S.Modal>
+          <S.ModalElement {...rest}>{children}</S.ModalElement>
         </S.Container>
       ) : null}
     </>,
