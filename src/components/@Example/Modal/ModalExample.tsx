@@ -11,9 +11,11 @@ const ModalExample = () => {
         <S.Container>
           <S.Header>
             <div /> <S.Title>Lorem ipsum</S.Title>
-            <S.CancleButton onClick={() => setOpenModal(false)}>
-              ❌
-            </S.CancleButton>
+            <div style={{ textAlign: "end" }}>
+              <S.CancleButton onClick={() => setOpenModal(false)}>
+                ❌
+              </S.CancleButton>
+            </div>
           </S.Header>
         </S.Container>
         <S.Content>
