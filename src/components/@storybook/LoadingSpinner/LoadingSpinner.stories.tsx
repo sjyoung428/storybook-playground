@@ -24,11 +24,10 @@ const Template: ComponentStory<typeof LoadingSpinner> = (args) => {
 };
 
 export const Primary = Template.bind({});
-Primary.args = {
-  color: "primary",
-};
 
 export const Secondary = Template.bind({});
 Secondary.args = {
+  ...Primary.args,
   color: "secondary",
+  size: "md",
 };
