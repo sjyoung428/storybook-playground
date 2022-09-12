@@ -2,6 +2,7 @@ import * as S from "./Modal.styles";
 import ReactDOM from "react-dom";
 import { ModalProps } from "./Modal.types";
 import { useEffect, useState } from "react";
+import Portal from "@/components/Portal/Portal";
 
 /**
  * @typedef {import("./Modal.types").ModalProps} ModalProps
@@ -13,7 +14,6 @@ import { useEffect, useState } from "react";
  */
 
 const Modal = ({ open = false, setOpen, children, ...rest }: ModalProps) => {
-  const modalRoot = document.querySelector("#modal") as HTMLElement;
   const [visible, setVisible] = useState(false);
 
   const onCancel = () => {
@@ -32,16 +32,15 @@ const Modal = ({ open = false, setOpen, children, ...rest }: ModalProps) => {
     return () => clearTimeout(visibleId);
   }, [open]);
 
-  return ReactDOM.createPortal(
-    <>
+  return (
+    <Portal id="modal">
       {visible ? (
         <S.Container open={open}>
           <S.Background onClick={onCancel} />
           <S.ModalElement {...rest}>{children}</S.ModalElement>
         </S.Container>
       ) : null}
-    </>,
-    modalRoot
+    </Portal>
   );
 };
 

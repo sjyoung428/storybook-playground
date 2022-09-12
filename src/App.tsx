@@ -12,6 +12,7 @@ function App() {
         <br />
         <br />
         <LoadingSpinner size="sm" color="secondary" />
+        <br />
 
         {/** 모달 */}
         <ModalExample />
