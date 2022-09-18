@@ -9,6 +9,11 @@ export interface CursorPositionState {
   x?: number;
   y?: number;
 }
+/**
+ *
+ * @todo 리팩토링 하기...
+ * @todo hover시 어떻게 할지 좀 더 고민해보기
+ */
 
 const Cursor = ({ containerRef }: CursorProps) => {
   const [cursorPosition, setCursorPosition] = useState<CursorPositionState>({
