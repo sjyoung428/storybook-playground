@@ -1,13 +1,13 @@
-import { ReactNode, ReactPortal } from "react";
+import { ReactNode } from "react";
 import { createPortal } from "react-dom";
 
 interface PortalProps {
   children: ReactNode;
-  id: string;
+  target: string;
 }
 
-const Portal = ({ children, id }: PortalProps) => {
-  const container = document.getElementById(id) as HTMLElement;
+const Portal = ({ children, target }: PortalProps) => {
+  const container = document.getElementById(target) as HTMLElement;
 
   return createPortal(children, container);
 };

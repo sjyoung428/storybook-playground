@@ -33,7 +33,7 @@ const Modal = ({ open = false, setOpen, children, ...rest }: ModalProps) => {
   }, [open]);
 
   return (
-    <Portal id="modal">
+    <Portal target="modal">
       {visible ? (
         <S.Container open={open}>
           <S.Background onClick={onCancel} />
