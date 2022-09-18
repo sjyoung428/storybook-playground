@@ -23,4 +23,13 @@ export const ProgressBar = styled.div<ScrollProgressState>`
         `}
   height: 0.5rem;
   width: ${({ progress }) => progress + "%"};
+  ${({ progress }) =>
+    progress === 100
+      ? css`
+          border-radius: none;
+        `
+      : css`
+          border-top-right-radius: 100px;
+          border-bottom-right-radius: 100px;
+        `}
 `;

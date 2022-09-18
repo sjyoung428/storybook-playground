@@ -13,6 +13,7 @@ export interface CursorPositionState {
  *
  * @todo 리팩토링 하기...
  * @todo hover시 어떻게 할지 좀 더 고민해보기
+ * @todo storybook 만들기
  */
 
 const Cursor = ({ containerRef }: CursorProps) => {
