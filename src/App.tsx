@@ -1,5 +1,5 @@
 import Button from "@/components/@storybook/Button/Button";
-import { MouseEventHandler, useCallback, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import ModalExample from "./components/@Example/Modal/ModalExample";
 import Cursor from "./components/@storybook/Cursor/Cursor";
 import LoadingSpinner from "./components/@storybook/LoadingSpinner/LoadingSpinner";
