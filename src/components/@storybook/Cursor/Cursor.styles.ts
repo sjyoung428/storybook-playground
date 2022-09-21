@@ -19,17 +19,33 @@ export const OuterCursor = styled.div<{ x?: number; y?: number }>`
       transform: translate(${x + "px"}, ${y + "px"});
     `}
   transition: all 0.08s ease-out;
-  z-index: -999;
+  pointer-events: none;
 `;
 
-export const InnerCursor = styled.div<{ x?: number; y?: number }>`
+export const InnerCursor = styled.div<{
+  x?: number;
+  y?: number;
+  isHover: boolean;
+}>`
   position: fixed;
   left: 0;
   top: 0;
-  height: 0.4rem;
-  width: 0.4rem;
-  margin-left: -0.2rem;
-  margin-top: -0.2rem;
+  ${({ isHover }) =>
+    isHover
+      ? css`
+          height: 3rem;
+          width: 3rem;
+          margin-left: -1.5rem;
+          margin-top: -1.5rem;
+          opacity: 0.3;
+        `
+      : css`
+          height: 0.4rem;
+          width: 0.4rem;
+          margin-left: -0.2rem;
+          margin-top: -0.2rem;
+        `}
+
   background-color: #ced0d4;
   border-radius: 50%;
   ${({ x, y }) =>
@@ -38,5 +54,7 @@ export const InnerCursor = styled.div<{ x?: number; y?: number }>`
     css`
       transform: translate(${x + "px"}, ${y + "px"});
     `}
-  z-index: -999
+  pointer-events: none;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
 `;

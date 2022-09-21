@@ -3,12 +3,14 @@ import * as S from "./Cursor.styles";
 
 interface CursorProps {
   containerRef: React.RefObject<HTMLDivElement>;
+  isHover?: boolean;
 }
 
 export interface CursorPositionState {
   x?: number;
   y?: number;
 }
+
 /**
  *
  * @todo 리팩토링 하기...
@@ -16,7 +18,7 @@ export interface CursorPositionState {
  * @todo storybook 만들기
  */
 
-const Cursor = ({ containerRef }: CursorProps) => {
+const Cursor = ({ containerRef, isHover = false }: CursorProps) => {
   const [cursorPosition, setCursorPosition] = useState<CursorPositionState>({
     x: undefined,
     y: undefined,
@@ -41,8 +43,12 @@ const Cursor = ({ containerRef }: CursorProps) => {
 
   return (
     <>
-      <S.OuterCursor x={cursorPosition.x} y={cursorPosition.y} />
-      <S.InnerCursor x={cursorPosition.x} y={cursorPosition.y} />
+      {!isHover && <S.OuterCursor x={cursorPosition.x} y={cursorPosition.y} />}
+      <S.InnerCursor
+        isHover={isHover}
+        x={cursorPosition.x}
+        y={cursorPosition.y}
+      />
     </>
   );
 };

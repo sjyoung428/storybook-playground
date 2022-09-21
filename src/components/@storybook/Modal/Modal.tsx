@@ -1,5 +1,4 @@
 import * as S from "./Modal.styles";
-import ReactDOM from "react-dom";
 import { ModalProps } from "./Modal.types";
 import { useEffect, useState } from "react";
 import Portal from "@/components/Portal/Portal";

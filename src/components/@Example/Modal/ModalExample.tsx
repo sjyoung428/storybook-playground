@@ -3,7 +3,11 @@ import Modal from "@/components/@storybook/Modal/Modal";
 import { useState } from "react";
 import * as S from "./ModalExample.styles";
 
-const ModalExample = () => {
+interface ModalExampleProps {
+  setIsHover: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const ModalExample = ({ setIsHover }: ModalExampleProps) => {
   const [openModal, setOpenModal] = useState(false);
   return (
     <>
@@ -28,7 +32,12 @@ const ModalExample = () => {
           culpa qui officia deserunt mollit anim id est laborum.
         </S.Content>
       </Modal>
-      <Button style={{ marginTop: "10%" }} onClick={() => setOpenModal(true)}>
+      <Button
+        style={{ marginTop: "10%" }}
+        onClick={() => setOpenModal(true)}
+        onMouseEnter={() => setIsHover(true)}
+        onMouseLeave={() => setIsHover(false)}
+      >
         모달 열기
       </Button>
     </>
