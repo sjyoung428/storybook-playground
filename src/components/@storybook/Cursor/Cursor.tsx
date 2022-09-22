@@ -8,6 +8,8 @@ import { CursorPositionState, CursorProps } from "./Cusor.types";
  * @param {CursorProps} props
  * @param [props.containerRef] - default 값으로 document.body이다.
  *
+ * 왜 스토리북에선 가운데 정렬이 안될까..?
+ *
  */
 
 const Cursor = ({ containerRef, isHover = false }: CursorProps) => {
