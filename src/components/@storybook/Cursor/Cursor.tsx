@@ -1,10 +1,12 @@
-import React, { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback } from "react";
 import * as S from "./Cursor.styles";
 import { CursorPositionState, CursorProps } from "./Cusor.types";
 
 /**
  *
- * @todo hover시 어떻게 할지 좀 더 고민해보기
+ * @typedef {import("./Cusor.types").CursorProps} CursorProps
+ * @param {CursorProps} props
+ * @param [props.containerRef] - default 값으로 document.body이다.
  *
  */
 
@@ -22,12 +24,20 @@ const Cursor = ({ containerRef, isHover = false }: CursorProps) => {
   }, []);
 
   useEffect(() => {
-    if (containerRef.current) {
+    if (containerRef && containerRef.current) {
       const container = containerRef.current;
       container.addEventListener("mousemove", onMove);
       return () => {
         container.removeEventListener("mousemove", onMove);
       };
+    } else {
+      if (!containerRef) {
+        const container = document.body;
+        container.addEventListener("mousemove", onMove);
+        return () => {
+          container.removeEventListener("mousemove", onMove);
+        };
+      }
     }
   }, []);
 

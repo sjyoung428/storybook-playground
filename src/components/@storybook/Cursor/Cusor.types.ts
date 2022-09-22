@@ -1,5 +1,5 @@
 export interface CursorProps {
-  containerRef: React.RefObject<HTMLDivElement>;
+  containerRef?: React.RefObject<HTMLDivElement>;
   isHover?: boolean;
 }
 

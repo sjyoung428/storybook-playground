@@ -19,7 +19,7 @@ const Template: ComponentStory<typeof Cursor> = () => {
         onMouseLeave={() => setIsHover(false)}
         children="버튼"
       />
-      <Cursor containerRef={divRef} isHover={isHover} />
+      <Cursor isHover={isHover} />
     </div>
   );
 };
