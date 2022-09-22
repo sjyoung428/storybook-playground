@@ -9,7 +9,7 @@ export default {
   component: Cursor,
 } as ComponentMeta<typeof Cursor>;
 
-const Template: ComponentStory<typeof Cursor> = (args) => {
+const Template: ComponentStory<typeof Cursor> = () => {
   const [isHover, setIsHover] = useState(false);
   const divRef = useRef<HTMLDivElement>(null);
   return (
