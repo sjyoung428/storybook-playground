@@ -19,6 +19,7 @@ export const OuterCursor = styled.div<{ x?: number; y?: number }>`
       transform: translate(${x + "px"}, ${y + "px"});
     `}
   transition: all 0.08s ease-out;
+
   pointer-events: none;
 `;
 
